@@ -1,0 +1,8 @@
+build/
+roms/
+
+*.swp
+*.o
+*.out
+
+pydo/
