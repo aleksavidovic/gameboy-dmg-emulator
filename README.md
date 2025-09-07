@@ -6,7 +6,8 @@ Above all this is an educational project.
 ### Phase 0: Basic Setup
 - Basic structs/types for parts of the system
 - ~~CPU registers~~
-- Structure for memory
+- ~~Structure for memory~~
+- ~~Load ROM function~~
 - Fetch-decode-execute loop (main emulator loop)
 - Set up automated testing
 ---
