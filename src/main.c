@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "CPU.h"
-#include "memory.h"
-#include "utils.h"
+#include "MMU.h"
 
 int main(int argc, char* argv[]) {
 	printf("GameBoy emulator started.\n");
@@ -16,9 +15,8 @@ int main(int argc, char* argv[]) {
 	CPU cpu;
 	CPU_init(&cpu);
 
-	uint8_t memory[MEMORY_SIZE] = {0};
-
-	if (load_ROM_to_memory(memory, sizeof(memory), rom_path) < 0) {
+	MMU mmu;
+	if ( MMU_init(&mmu, rom_path) < 0 ) {
 		printf("ERROR: Could not load rom <%s> into memory. Exiting...\n", rom_path);
 	}
 	bool running = true;
