@@ -9,7 +9,7 @@ Above all this is an educational project.
 - ~~Structure for memory~~
 - ~~Load ROM function~~
 - Fetch-decode-execute loop (main emulator loop)
-- Set up automated testing
+- ~~Set up automated testing~~
 ---
 ### Phase 1: CPU & MMU
 - Implement full CPU instruction set
