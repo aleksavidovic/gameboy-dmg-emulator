@@ -5,7 +5,7 @@ Above all this is an educational project.
 ## TODO
 ### Phase 0: Basic Setup
 - Basic structs/types for parts of the system
-- CPU registers
+- ~~CPU registers~~
 - Structure for memory
 - Fetch-decode-execute loop (main emulator loop)
 - Set up automated testing
