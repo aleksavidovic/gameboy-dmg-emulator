@@ -13,7 +13,7 @@ Above all this is an educational project.
 ### Phase 1: CPU & MMU ◀️
 - Implement MMU
     - MMU struct with separate memory regions
-    - Init operation (with ROM loading)
+    - ~~Init operation (with ROM loading)~~
     - Read operation
     - Write operation
 - Fetch-decode-execute loop (main emulator loop)
