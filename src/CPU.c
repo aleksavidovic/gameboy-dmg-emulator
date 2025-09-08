@@ -11,3 +11,11 @@ void CPU_init(CPU* cpu) {
 
 	printf("CPU init successful.\n");
 }
+
+void CPU_step(CPU* cpu, MMU* mmu) {
+	uint8_t instruction_byte = MMU_read(mmu, cpu->PC);
+	printf("CPU read instruction byte: %02x\n", instruction_byte);
+	// Decode instruction
+	// Perform the operation
+	cpu->PC++; // will need to increase by instruction size
+}

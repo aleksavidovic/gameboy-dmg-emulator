@@ -21,9 +21,7 @@ int main(int argc, char* argv[]) {
 	}
 	bool running = true;
 	while (running) {
-		// 1. Fetch
-		// 2. Decode
-		// 3. Execute
+		CPU_step(&cpu, &mmu);
 		running = false;
 	}
 	return 0;

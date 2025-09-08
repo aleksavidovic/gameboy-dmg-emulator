@@ -2,6 +2,7 @@
 #define _CPU_H
 
 #include <stdint.h>
+#include "MMU.h"
 
 // Initial values of registers
 #define AF_INIT_VAL 0x01B0
@@ -41,5 +42,6 @@ typedef struct {
 } CPU;
 
 void CPU_init(CPU* cpu);
+void CPU_step(CPU* cpu, MMU* mmu);
 
 #endif // _CPU_H

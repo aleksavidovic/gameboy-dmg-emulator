@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int MMU_init(MMU* mmu, char* rom_path) {
+int MMU_init(MMU* mmu, char* rom_path){
 	memset(mmu, 0, sizeof(MMU));
     FILE* rom_file = fopen(rom_path, "rb");
     if (!rom_file) {
