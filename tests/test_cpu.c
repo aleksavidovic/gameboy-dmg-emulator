@@ -15,3 +15,13 @@ Test(cpu_suite, initializes_registers_correctly) {
     cr_assert_eq(cpu.PC, PC_INIT_VAL, "PC register should be 0x%04X", PC_INIT_VAL);
 }
 
+Test(cpu_suite, reads_instruction_correctly) {
+	CPU cpu;
+	CPU_init(&cpu);
+	MMU mmu;
+	memset(&mmu, 0, sizeof(MMU));
+	MMU_write(&mmu, (uint16_t)0x100, (uint8_t)0x00);
+	CPU_step(&cpu, &mmu);
+
+    cr_assert_eq(cpu.PC, 0x0101, "PC should increment by 1 after NOP.");
+}
